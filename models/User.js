@@ -8,6 +8,5 @@ const userSchema = new mongoose.Schema({
     fcmToken: { type: String, default: null }, // Token for push notifications
 });
 
-const User = mongoose.models.User || mongoose.model('User', userSchema);
-
+const User = mongoose.model('User', userSchema);
 export default User;
